@@ -95,10 +95,6 @@ public class MainActivity extends AppCompatActivity {
 
         Intent intent = new Intent(this, DisplayResult.class);
 
-        Bundle b = new Bundle();
-        b.putInt("key", 1); //Your id
-        intent.putExtras(b); //Put your id to your next Intent
-
         // EditText editText = (EditText) findViewById(R.id.edit_message);
         // String message = editText.getText().toString();
         //intent.putExtra(EXTRA_MESSAGE, message);
