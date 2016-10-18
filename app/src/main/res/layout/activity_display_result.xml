@@ -21,4 +21,16 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:background="@drawable/positiv" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="fitCenter"
+        app:srcCompat="@drawable/negativ"
+        android:id="@+id/imageButton3"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="@drawable/positiv"
+        android:visibility="gone"/>
 </RelativeLayout>
