@@ -74,9 +74,6 @@ public class MainActivity extends AppCompatActivity {
             if (resultCode == RESULT_OK) {
                 showpicture.setImageURI(pictureuri);
 
-                rightPixel = showpicture.getDrawingCache().getPixel(1, 1);
-                midPixel = showpicture.getDrawingCache().getPixel(1, 1);
-                leftPixel = showpicture.getDrawingCache().getPixel(1, 1);
 
             }
         }
