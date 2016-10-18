@@ -21,7 +21,9 @@ public class MainActivity extends AppCompatActivity {
     private ImageButton roundcamerabutton;
     private ImageView showpicture;
     public Uri pictureuri;
-
+    public int rightPixel;
+    public int midPixel;
+    public int leftPixel;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -72,6 +74,9 @@ public class MainActivity extends AppCompatActivity {
             if (resultCode == RESULT_OK) {
                 showpicture.setImageURI(pictureuri);
 
+                rightPixel = showpicture.getDrawingCache().getPixel(1, 1);
+                midPixel = showpicture.getDrawingCache().getPixel(1, 1);
+                leftPixel = showpicture.getDrawingCache().getPixel(1, 1);
 
             }
         }
@@ -86,11 +91,6 @@ public class MainActivity extends AppCompatActivity {
 
     //utfoerer testen og sender resultatet videre
     public void doTest(View view2) {
-
-
-        int rightPixel = showpicture.getDrawingCache().getPixel(1, 1);
-        int midPixel = showpicture.getDrawingCache().getPixel(1, 1);
-        int leftPixel = showpicture.getDrawingCache().getPixel(1, 1);
 
         Intent intent = new Intent(this, DisplayResult.class);
 
