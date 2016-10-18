@@ -86,13 +86,12 @@ public class MainActivity extends AppCompatActivity {
 
     //utfoerer testen og sender resultatet videre
     public void doTest(View view2) {
-/*
-        Bitmap bitmap = showpicture.getDrawingCache();
 
-        int rightPixel = bitmap.getPixel(88, 297);
-        int midPixel = bitmap.getPixel(214, 305);
-        int leftPixel = bitmap.getPixel(356, 291);
-*/
+
+        int rightPixel = showpicture.getDrawingCache().getPixel(1, 1);
+        int midPixel = showpicture.getDrawingCache().getPixel(1, 1);
+        int leftPixel = showpicture.getDrawingCache().getPixel(1, 1);
+
         Intent intent = new Intent(this, DisplayResult.class);
 
         // EditText editText = (EditText) findViewById(R.id.edit_message);
