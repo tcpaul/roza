@@ -69,7 +69,8 @@ public class MainActivity extends AppCompatActivity {
         b.setVisibility(View.GONE);
         View c = findViewById(R.id.text);
         c.setVisibility(View.GONE);
-
+        View e = findViewById(R.id.imageView);
+        e.setVisibility(View.VISIBLE);
         if (requestCode == 100) {
             if (resultCode == RESULT_OK) {
       //          showpicture.setImageURI(pictureuri);
@@ -79,8 +80,7 @@ public class MainActivity extends AppCompatActivity {
         }
         View d = findViewById(R.id.imageButton);
         d.setVisibility(View.VISIBLE);
-        View e = findViewById(R.id.imageView);
-        e.setVisibility(View.VISIBLE);
+
     }
 
     public void info(View view2) {
