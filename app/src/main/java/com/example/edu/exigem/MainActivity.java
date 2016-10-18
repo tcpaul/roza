@@ -19,7 +19,7 @@ import android.os.Environment;
 public class MainActivity extends AppCompatActivity {
 
     private ImageButton roundcamerabutton;
-    private ImageView showpicture;
+    //private ImageView showpicture;
     public Uri pictureuri;
     public int rightPixel;
     public int midPixel;
@@ -30,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         roundcamerabutton = (ImageButton) findViewById(R.id.button_image);
-        showpicture = (ImageView) findViewById(R.id.picture);
+       // showpicture = (ImageView) findViewById(R.id.picture);
 
         /* Tilgang til kamera og lagring */
         if (ContextCompat.checkSelfPermission(this, Manifest.permission.CAMERA) != PackageManager.PERMISSION_GRANTED) {
@@ -72,13 +72,15 @@ public class MainActivity extends AppCompatActivity {
 
         if (requestCode == 100) {
             if (resultCode == RESULT_OK) {
-                showpicture.setImageURI(pictureuri);
+      //          showpicture.setImageURI(pictureuri);
 
 
             }
         }
         View d = findViewById(R.id.imageButton);
         d.setVisibility(View.VISIBLE);
+        View e = findViewById(R.id.imageView);
+        e.setVisibility(View.VISIBLE);
     }
 
     public void info(View view2) {

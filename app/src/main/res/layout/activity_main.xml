@@ -108,4 +108,16 @@
         android:onClick="doTest"
         android:visibility="gone"/>
 
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/thetest"
+        android:layout_toStartOf="@+id/picture"
+        android:id="@+id/imageView"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignBottom="@+id/picture"
+        android:visibility="gone"
+        android:layout_toLeftOf="@+id/picture" />
+
 </RelativeLayout>
