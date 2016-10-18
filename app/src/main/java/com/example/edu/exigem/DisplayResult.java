@@ -9,5 +9,12 @@ public class DisplayResult extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_display_result);
+
+        Bundle b = getIntent().getExtras();
+        int value = -1; // or other values
+        if(b != null)
+            value = b.getInt("key");
+
+
     }
 }

@@ -3,6 +3,7 @@ package com.example.edu.exigem;
 import android.Manifest;
 import android.content.Intent;
 import android.content.pm.PackageManager;
+import android.graphics.Bitmap;
 import android.net.Uri;
 import android.provider.MediaStore;
 import android.support.v4.app.ActivityCompat;
@@ -70,11 +71,12 @@ public class MainActivity extends AppCompatActivity {
         if (requestCode == 100) {
             if (resultCode == RESULT_OK) {
                 showpicture.setImageURI(pictureuri);
-                View d = findViewById(R.id.imageButton);
-                d.setVisibility(View.VISIBLE);
+
 
             }
         }
+        View d = findViewById(R.id.imageButton);
+        d.setVisibility(View.VISIBLE);
     }
 
     public void info(View view2) {
@@ -82,8 +84,21 @@ public class MainActivity extends AppCompatActivity {
         startActivity(infopage);
     }
 
+    //utfoerer testen og sender resultatet videre
     public void doTest(View view2) {
+
+        Bitmap bitmap = showpicture.getDrawingCache();
+
+        int rightPixel = bitmap.getPixel(88, 297);
+        int midPixel = bitmap.getPixel(214, 305);
+        int leftPixel = bitmap.getPixel(356, 291);
+
         Intent intent = new Intent(this, DisplayResult.class);
+
+        Bundle b = new Bundle();
+        b.putInt("key", 1); //Your id
+        intent.putExtras(b); //Put your id to your next Intent
+
         // EditText editText = (EditText) findViewById(R.id.edit_message);
         // String message = editText.getText().toString();
         //intent.putExtra(EXTRA_MESSAGE, message);
