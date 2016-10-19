@@ -18,7 +18,7 @@ public class DisplayResult extends AppCompatActivity {
 
     }
 
-    public void results() {
+    public void results(View view) {
 
         Intent intent = new Intent(this, Results.class);
 
