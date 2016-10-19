@@ -161,6 +161,13 @@ public class FullscreenActivity extends AppCompatActivity {
         mHideHandler.postDelayed(mHideRunnable, delayMillis);
     }
 
+    public void info1(View view) {
+        View a = findViewById(R.id.imageButton3);
+        a.setVisibility(View.GONE);
+        View b = findViewById(R.id.imageButton4);
+        b.setVisibility(View.VISIBLE);
+    }
+
     public void info2(View view) {
         View a = findViewById(R.id.imageButton4);
         a.setVisibility(View.GONE);
@@ -176,13 +183,6 @@ public class FullscreenActivity extends AppCompatActivity {
     }
 
     public void info4(View view) {
-        View a = findViewById(R.id.imageButton3);
-        a.setVisibility(View.GONE);
-        View b = findViewById(R.id.imageButton4);
-        b.setVisibility(View.VISIBLE);
-    }
-
-    public void info5(View view) {
         View a = findViewById(R.id.imageButton3);
         a.setVisibility(View.GONE);
         View b = findViewById(R.id.imageButton4);
