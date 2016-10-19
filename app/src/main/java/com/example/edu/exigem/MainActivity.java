@@ -69,8 +69,7 @@ public class MainActivity extends AppCompatActivity {
         b.setVisibility(View.GONE);
         View c = findViewById(R.id.text);
         c.setVisibility(View.GONE);
-        View e = findViewById(R.id.imageView);
-        e.setVisibility(View.VISIBLE);
+
         if (requestCode == 100) {
             if (resultCode == RESULT_OK) {
       //          showpicture.setImageURI(pictureuri);
@@ -78,8 +77,7 @@ public class MainActivity extends AppCompatActivity {
 
             }
         }
-        View d = findViewById(R.id.imageButton);
-        d.setVisibility(View.VISIBLE);
+        doTest();
 
     }
 
@@ -89,7 +87,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     //utfoerer testen og sender resultatet videre
-    public void doTest(View view2) {
+    public void doTest() {
 
         Intent intent = new Intent(this, DisplayResult.class);
 

@@ -16,4 +16,12 @@ public class DisplayResult extends AppCompatActivity {
 
 
     }
+
+    public void testing(){
+
+        View a = findViewById(R.id.imageView);
+        a.setVisibility(View.GONE);
+        View b = findViewById(R.id.imageButton2);
+        b.setVisibility(View.VISIBLE);
+    }
 }
