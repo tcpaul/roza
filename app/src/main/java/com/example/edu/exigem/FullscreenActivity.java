@@ -160,4 +160,11 @@ public class FullscreenActivity extends AppCompatActivity {
         mHideHandler.removeCallbacks(mHideRunnable);
         mHideHandler.postDelayed(mHideRunnable, delayMillis);
     }
+
+    public void info1(View view) {
+        View a = findViewById(R.id.imageButton3);
+        a.setVisibility(View.GONE);
+        View b = findViewById(R.id.imageButton4);
+        b.setVisibility(View.VISIBLE);
+    }
 }
