@@ -1,5 +1,6 @@
 package com.example.edu.exigem;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -17,11 +18,14 @@ public class DisplayResult extends AppCompatActivity {
 
     }
 
-    public void testing(){
+    public void results() {
 
-        View a = findViewById(R.id.imageButtonResult);
-        a.setVisibility(View.GONE);
-        View b = findViewById(R.id.imageButton2);
-        b.setVisibility(View.VISIBLE);
+        Intent intent = new Intent(this, Results.class);
+
+        // EditText editText = (EditText) findViewById(R.id.edit_message);
+        // String message = editText.getText().toString();
+        //intent.putExtra(EXTRA_MESSAGE, message);
+        startActivity(intent);
+        // Do something in response to button
     }
 }
