@@ -74,7 +74,59 @@
             android:scaleType="fitCenter"
             android:visibility="gone"
             android:clickable="true"
-            android:onClick="info1"/>
+            android:onClick="info3"/>
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/info4"
+            android:id="@+id/imageButton6"
+            android:scaleType="fitCenter"
+            android:visibility="gone"
+            android:clickable="true"
+            android:onClick="info4"/>
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/info5"
+            android:id="@+id/imageButton7"
+            android:scaleType="fitCenter"
+            android:visibility="gone"
+            android:clickable="true"
+            android:onClick="info5"/>
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/info6"
+            android:id="@+id/imageButton8"
+            android:scaleType="fitCenter"
+            android:visibility="gone"
+            android:clickable="true"
+            android:onClick="info3"/>
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/info7"
+            android:id="@+id/imageButton9"
+            android:scaleType="fitCenter"
+            android:visibility="gone"
+            android:clickable="true"
+            android:onClick="info3"/>
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/info8"
+            android:id="@+id/imageButton10"
+            android:scaleType="fitCenter"
+            android:visibility="gone"
+            android:clickable="true"
+            android:onClick="info3"/>
+
+
     </FrameLayout>
 
 </FrameLayout>

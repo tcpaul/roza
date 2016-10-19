@@ -176,16 +176,36 @@ public class FullscreenActivity extends AppCompatActivity {
     }
 
     public void info3(View view) {
-        View a = findViewById(R.id.imageButton3);
+        View a = findViewById(R.id.imageButton5);
         a.setVisibility(View.GONE);
-        View b = findViewById(R.id.imageButton4);
+        View b = findViewById(R.id.imageButton6);
         b.setVisibility(View.VISIBLE);
     }
 
-    public void info4(View view) {
-        View a = findViewById(R.id.imageButton3);
+    public void info5(View view) {
+        View a = findViewById(R.id.imageButton6);
         a.setVisibility(View.GONE);
-        View b = findViewById(R.id.imageButton4);
+        View b = findViewById(R.id.imageButton7);
+        b.setVisibility(View.VISIBLE);
+    }
+
+    public void info6(View view) {
+        View a = findViewById(R.id.imageButton7);
+        a.setVisibility(View.GONE);
+        View b = findViewById(R.id.imageButton8);
+        b.setVisibility(View.VISIBLE);
+    }
+    public void info7(View view) {
+        View a = findViewById(R.id.imageButton8);
+        a.setVisibility(View.GONE);
+        View b = findViewById(R.id.imageButton9);
+        b.setVisibility(View.VISIBLE);
+    }
+
+    public void infoReset(View view) {
+        View a = findViewById(R.id.imageButton9);
+        a.setVisibility(View.GONE);
+        View b = findViewById(R.id.imageButton3);
         b.setVisibility(View.VISIBLE);
     }
 }
