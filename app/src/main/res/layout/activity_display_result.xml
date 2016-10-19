@@ -12,12 +12,12 @@
     tools:context="com.example.edu.exigem.DisplayResult">
 
 
-    <ImageView
+    <ImageButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:srcCompat="@drawable/thetest"
         android:layout_toStartOf="@+id/picture"
-        android:id="@+id/imageView"
+        android:id="@+id/imageButtonResult"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"
         android:layout_alignBottom="@+id/picture"
