@@ -62,7 +62,19 @@
             app:srcCompat="@drawable/info2"
             android:id="@+id/imageButton4"
             android:scaleType="fitCenter"
-            android:visibility="gone"/>
+            android:visibility="gone"
+            android:clickable="true"
+            android:onClick="info2"/>
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/info3"
+            android:id="@+id/imageButton5"
+            android:scaleType="fitCenter"
+            android:visibility="gone"
+            android:clickable="true"
+            android:onClick="info1"/>
     </FrameLayout>
 
 </FrameLayout>
